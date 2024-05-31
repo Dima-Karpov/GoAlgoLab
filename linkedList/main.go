@@ -75,7 +75,7 @@ func (l *IntList) Add(el int) {
 
 // Insert - вставка нового эдемента в произвольную позицию
 func (l *IntList) Insert(el int, index int) error {
-	if index < 0 || index >= l.size {
+	if index < 0 || index >= l.Size() {
 		return ErrorWrongListIndex
 	}
 
